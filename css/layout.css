@@ -1,0 +1,308 @@
+/* --- Fonts --- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/* --- Bootstrap overrides --- */
+
+body {
+	font-family: 'Roboto', ubuntu, "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: 300;
+}
+
+/* --- Drupal core overrides --- */
+
+.messages {
+	margin-bottom: 15px;
+}
+
+/* --- Koningsschutters general classes --- */
+
+.koningsschutters-content-footer {
+	color: #666;
+	background: #fafafa;
+	padding: 5px;
+}
+
+/* --- Koningsschutters styling --- */
+
+.koningsschutters-navbar {
+	border-bottom: 0;
+	background: #fff;
+	margin-bottom: 0;
+}
+
+.koningsschutters-navbar .navbar-brand:before {
+	content: "\e044";
+	font-family: 'Glyphicons Halflings';
+	display: inline-block;
+	color: #999;
+	width: 12px;
+	margin-left: -12px;
+	margin-right: 8px;
+	font-size: 10px;
+	-webkit-transform: rotateZ(180deg);
+	-webkit-transition: -webkit-transform 300ms ease-in-out 0s, color 300ms ease-in-out 0s;
+	-moz-transform: rotateZ(180deg);
+	-moz-transition: -moz-transform 300ms ease-in-out 0s, color 300ms ease-in-out 0s;
+	transform: rotateZ(180deg);
+	transition: transform 300ms ease-in-out 0s, color 300ms ease-in-out 0s;
+}
+
+.koningsschutters-navbar .navbar-brand:hover:before {
+	color: #000;
+	-webkit-transform: rotateZ(0);
+	-moz-transform: rotateZ(0);
+	transform: rotateZ(0);
+}
+
+.koningsschutters-navbar .icon-bar {
+	background-color: #888;
+}
+
+.koningsschutters-site-header {
+	margin-bottom: 40px;
+	position: relative;
+	padding: 30px 15px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+	background-color: #eee;
+	background-position: 120px center, center;
+	background-repeat: no-repeat;
+	background-size: 120px, cover;
+	text-align: center;
+	height: 250px;
+}
+
+.header-image-1 .koningsschutters-site-header {
+	background-image: url('../images/logo-ks.png'), url('../images/header-1.png');
+}
+
+.header-image-2 .koningsschutters-site-header {
+	background-image: url('../images/logo-ks.png'), url('../images/header-2.png');
+}
+
+.header-image-3 .koningsschutters-site-header {
+	background-image:  url('../images/logo-ks.png'), url('../images/header-3.png');
+}
+
+.koningsschutters-site-header h1 {
+	color: #fff;
+	margin-top: 0;
+	/* background: url('../images/logo-ks.png') no-repeat center right; */
+	height: 150px;
+}
+
+.koningsschutters-meta {
+	font-style: italic;
+}
+
+.koningsschutters-navbar-collapse .nav > .active-trail > a,
+.koningsschutters-navbar-collapse .nav > .active-trail:hover > a,
+.koningsschutters-navbar-collapse .nav > .active-trail:focus > a,
+.koningsschutters-navbar-collapse .nav > li > a.active,
+.koningsschutters-navbar-collapse .nav > li > a.active:hover,
+.koningsschutters-navbar-collapse .nav > li > a.active:focus {
+	background: #eee;
+}
+
+.koningsschutters-site-container article {
+	margin-bottom: 60px;
+}
+
+.koningsschutters-site-sidebar .nav > li > a {
+	display: block;
+	padding: 4px 20px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #999;
+}
+
+.koningsschutters-site-sidebar .nav > li > a:hover,
+.koningsschutters-site-sideabr .nav > li > a:focus {
+	padding-left: 19px;
+	color: #000;
+	text-decoration: none;
+	background-color: transparent;
+	border-left: 1px solid #1c65a4;
+}
+
+.koningsschutters-site-sidebar .nav > .active-trail > a,
+.koningsschutters-site-sidebar .nav > .active-trail:hover > a,
+.koningsschutters-site-sidebar .nav > .active-trail:focus > a {
+	padding-left: 18px;
+	font-weight: 700;
+	color: #000;
+	background-color: transparent;
+	border-left: 2px solid #1c65a4;
+}
+
+.koningsschutters-site-sidebar .nav .nav {
+	padding-bottom: 10px;
+	/* display: none; */
+}
+
+.koningsschutters-site-sidebar .nav .nav > li > a {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 30px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.koningsschutters-site-sidebar .nav .nav > li > a:hover,
+.koningsschutters-site-sidebar .nav .nav > li > a:focus {
+	padding-left: 29px;
+}
+
+.koningsschutters-site-sidebar .nav .nav > .active > a,
+.koningsschutters-site-sidebar .nav .nav > .active > a:hover,
+.koningsschutters-site-sidebar .nav .nav > .active > a:focus {
+	padding-left: 28px;
+	font-weight: 500;
+}
+
+.koningsschutters-site-sidenav {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-left: 1px solid #ddd;
+}
+
+.koningsschutters-site-sidebar .koningsschutters-site-label {
+	padding-left: 20px;
+	padding-bottom: 4px;
+	font-weight: 700;
+	color: #1565C0;
+}
+
+.koningsschutters-site-news {
+	background: #fefefe;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.koningsschutters-site-footer {
+	margin-top: 180px;
+}
+
+.koningsschutters-site-footer .col-md-3:first-child {
+	padding-left: 0;
+}
+
+.koningsschutters-site-footer .col-md-3:last-child {
+	padding-right: 0;
+}
+
+.koningsschutters-site-footer > section {
+	padding-top: 30px;
+}
+
+.koningsschutters-site-footer-links {
+	padding-left: 0;
+	margin-top: 20px;
+	color: #000;
+	height: 50px;
+	line-height: 50px;
+	background: url('../images/knsa-kroon.png') no-repeat center right;
+}
+
+.koningsschutters-site-footer-links li {
+	display: inline;
+	padding: 0 2px;
+}
+
+.koningsschutters-site-footer-links li:first-child {
+	padding-left: 0;
+}
+
+.koningsschutters-site-footer-links li:last-child {
+	padding-right: 0;
+}
+
+.koningsschutters-site-footer-top {
+	background: #f1f1f1;
+}
+
+.koningsschutters-site-footer-top ul,
+.koningsschutters-site-footer-top ol {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.koningsschutters-site-footer-top ul li {
+	padding-left: 12px;
+	margin-bottom: 4px;
+}
+
+.koningsschutters-site-footer-top ul li:before {
+	content: "\e080";
+	font-family: 'Glyphicons Halflings';
+	display: inline-block;
+	width: 12px;
+	margin-left: -12px;
+	margin-right: 8px;
+	font-size: 10px;
+}
+
+.koningsschutters-site-footer-top h4 {
+	color: #1565C0;
+}
+
+.koningsschutters-site-footer-bottom {
+	background: #4F84BA;
+}
+
+/* --- Maintenance page --- */
+
+.maintenance-page {
+	background: #f6f6f6;
+}
+
+.maintenance-inner {
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin: 40px auto;
+	width: 720px;
+}
+
+.maintenance-inner h1 {
+	border-bottom: 1px solid #eee;
+	padding: 0 10px 5px 10px;
+}
+
+/* --- Media queries --- */
+
+@media (min-width: 769px) {
+	.koningsschutters-site-header {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		font-size: 24px;
+		text-align: left;
+	}
+
+	.koningsschutters-site-header h1 {
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 768px) {
+	.koningsschutters-site-footer {
+		margin-top: 40px;
+	}
+}
+
+
+@media (max-width: 640px) {
+	.koningsschutters-site-header {
+		display: none;
+	}
+
+	h1.page-header {
+		font-size: 24px;
+	}
+}

@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Functions to support the theme
+ */
+
+use Drupal\Component\Utility\String;
+use Drupal\Component\Utility\Xss;
+use Drupal\Core\Template\Attribute;
+
+function __pr($what)
+{
+	return '<pre>' . print_r($what, true) . '</pre>';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function koningsschutters_preprocess_page(&$variables)
+{
+	$page = $variables['page']['#page'];
+	$attributes = $page->getBodyAttributes();
+	$classes = $attributes['class'];
+	$random = mt_rand(1, 3);
+
+	/*
+	 * Append the random header image class
+	 */
+	$classes[] = 'header-image-' . $random;
+
+	/**
+	 * Assign $classes to the page object again
+	 */
+	$attributes['class'] = $classes;
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for maintenance-page.html.twig
+ */
+function koningsschutters_preprocess_maintenance_page(&$variables)
+{
+	/**
+	 * By default, site_name is set to 'Drupal' if no DB connection is available
+	 * or during site installation. Setting site_name to something else makes
+	 * the site and update pages look better
+	 * @see template_preprocess_maintenance_page
+	 */
+	if(!$variables['db_is_active'])
+	{
+		$variables['site_name'] = 'S.V. Koningsschutters';
+	}
+}
+
+/**
+ * Implements template_preprocess_status_messages for status-messages.html.twig
+ * @todo Fix code, it's not working now
+ */
+
+/*
+function koningsschutters_preprocess_status_messages(&$variables)
+{
+	$variables['message_list'] = drupal_get_messages($variables['display']);
+	$variables['status_headings'] = array(
+		'status' => t('Status message'),
+		'error' => t('Error messsage'),
+		'warning' => t('Warning message')
+	);
+}
+*/

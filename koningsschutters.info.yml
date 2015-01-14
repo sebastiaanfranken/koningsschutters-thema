@@ -1,0 +1,25 @@
+name: Koningsschutters
+type: theme
+description: 'Het thema voor S.V. Koningsschutters'
+package: Core
+version: 1.1
+core: 8.x
+#stylesheets:
+#  all:
+#    - css/bootstrap.min.css
+#    - css/bootstrap-theme.min.css
+#    - css/layout.css
+stylesheets-remove:
+  - normalize.css
+libraries:
+  - koningsschutters/base
+regions:
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+  footer_one: 'Footer one'
+  footer_two: 'Footer two'
+  footer_three: 'Footer three'
+  footer_four: 'Footer four'

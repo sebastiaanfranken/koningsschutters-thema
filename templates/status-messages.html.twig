@@ -1,0 +1,36 @@
+{% for type, messages in message_list %}
+
+	{# This is a yay-nasty workaround but it works.. #}
+	{% if(type == 'status') %}
+	{% set theType = 'success' %}
+	{% elseif(type == 'error') %}
+	{% set theType = 'danger' %}
+	{% elseif(type == 'warning') %}
+	{% set theType = 'warning' %}
+	{% else %}
+	{% set theType = type %}
+	{% endif %}
+
+	{%
+	set classes = [
+		'alert',
+		'alert-' ~ theType
+	]
+	%}
+	<div class="{{ attributes.addClass(classes).class }}" role="alert">
+		{% if status_headings[type] %}
+		<h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+		{% endif %}
+		{% if messages|length > 1 %}
+		<ul>
+			{% for message in messages %}
+			<li>{{ message }}</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+		{{ messages|first }}
+		{% endif %}
+	</div> 
+	{# Remove type specific classes #}
+	{{ attributes.removeClass(classes) }}
+{% endfor %}
