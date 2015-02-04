@@ -194,6 +194,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .koningsschutters-site-footer {
 	margin-top: 180px;
 	color: #fff;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03);
 }
 
 .koningsschutters-site-footer .col-md-3:first-child {
@@ -211,7 +214,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .koningsschutters-site-footer-links {
 	padding-left: 0;
 	margin-top: 20px;
-	color: #000;
 	height: 50px;
 	line-height: 50px;
 	background: url('../images/knsa-kroon.png') no-repeat center right;
