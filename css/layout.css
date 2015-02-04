@@ -193,6 +193,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .koningsschutters-site-footer {
 	margin-top: 180px;
+	color: #fff;
 }
 
 .koningsschutters-site-footer .col-md-3:first-child {
@@ -230,7 +231,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .koningsschutters-site-footer-top {
-	background: #f1f1f1;
+	/* background: #f1f1f1; */
+	background: #25383b;
 }
 
 .koningsschutters-site-footer-top ul,
@@ -260,7 +262,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .koningsschutters-site-footer-bottom {
-	background: #4F84BA;
+	/* background: #4F84BA; */
+	background: #25383b;
 }
 
 /* --- Maintenance page --- */
