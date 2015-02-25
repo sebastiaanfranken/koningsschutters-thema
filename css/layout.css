@@ -76,23 +76,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	padding: 30px 15px;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 	background-color: #eee;
-	background-position: 120px center, center;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 120px, cover;
+	background-size: cover;
 	text-align: center;
 	height: 250px;
 }
 
 .header-image-1 .koningsschutters-site-header {
-	background-image: url('../images/logo-ks.png'), url('../images/header-1.png');
+	background-image: url('../images/header-1.png');
 }
 
 .header-image-2 .koningsschutters-site-header {
-	background-image: url('../images/logo-ks.png'), url('../images/header-2.png');
+	background-image: url('../images/header-2.png');
 }
 
 .header-image-3 .koningsschutters-site-header {
-	background-image:  url('../images/logo-ks.png'), url('../images/header-3.png');
+	background-image: url('../images/header-3.png');
 }
 
 .koningsschutters-site-header h1 {
@@ -199,6 +199,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03);
 }
 
+.koningsschutters-site-footer h4 {
+	font-size: 20px;
+}
+
 .koningsschutters-site-footer .col-md-3:first-child {
 	padding-left: 0;
 }
@@ -209,6 +213,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .koningsschutters-site-footer > section {
 	padding-top: 30px;
+}
+
+.koningsschutters-footer-logo {
+	background: url('../images/logo-ks.png') no-repeat left center;
+	height: 245px;
 }
 
 .koningsschutters-site-footer-links {

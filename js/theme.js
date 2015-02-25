@@ -34,8 +34,13 @@ jQuery(document).ready(function($) {
 		});
 	}
 
+	/*
 	if($('table')) {
 		$('table').addClass('table table-striped');
+	}
+	*/
+	if($('.koningsschutters-site-container table')) {
+		$('.koningsschutters-site-container table').addClass('table table-striped');
 	}
 
 	$('main.col-md-9 h1').first().removeAttr('class').detach().appendTo('div.koningsschutters-site-header div.container');

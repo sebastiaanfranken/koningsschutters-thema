@@ -46,11 +46,15 @@
 <footer class="koningsschutters-site-footer">
 	<section class="koningsschutters-site-footer-top">
 		<div class="container">
+			{% if page.footer_one %}
 			<div class="col-md-3">
-				{% if page.footer_one %}
-				{{ page.footer_one }}
-				{% endif %}
+				{{ page.footer_one }}				
 			</div> <!-- /.col-md-3 -->
+			{% else %}
+			<div class="col-md-3 koningsschutters-footer-logo">
+				<h4>S.V. Koningsschutters</h4>
+			</div>
+			{% endif %}
 
 			<div class="col-md-3">
 				{% if page.footer_two %}
